@@ -10,13 +10,27 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
+    <div class="main-content">
+    <h1 class="project-name">Ajax</h1>
+    <h2 class="project-tagline">blablabla</h2>
+  </div>
+
+
+
+
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
   <script type="text/javascript">
   $(function () {
     $.ajax({
       url: 'http://cutty7sark.github.io/test/main.html',
-      success: function() {
+      success: function(data, second) {
+        console.log(arguments);
+        console.log(data);
+        console.log(second);
         alert('Load was performed');
+
+        $('.main-content').html();
       }
     });
   });
