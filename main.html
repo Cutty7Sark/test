@@ -12,6 +12,15 @@
   <body>
   <p>hello world!</p>
 
-  
+  <script type="text/javascript">
+  $(function {
+    $.ajax({
+      url: 'http://cutty7sark.github.io/test/main.html',
+      success: function() {
+        alert('Load was performed');
+      }
+    });
+  });
+</script>
   </body>
 </html>
