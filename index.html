@@ -13,6 +13,7 @@
     <div class="main-content">
     <h1 class="project-name">Ajax</h1>
     <h2 class="project-tagline">blablabla</h2>
+    <button>bang bang bang</button>
   </div>
 
 
@@ -21,7 +22,7 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
   <script type="text/javascript">
-  $(function () {
+  $('button').on('click', function () {
     $.ajax({
       url: 'http://cutty7sark.github.io/test/main.html',
       success: function(data, second) {
